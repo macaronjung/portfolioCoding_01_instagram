@@ -93,4 +93,50 @@ header .icons li a img {
 /* main */
 main {
   padding-top: calc(var(--padding) * 2);
+  display: flex;
+  flex-direction: row;
+}
+main .photo {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--gray-light-color);
+}
+main .photo .photo_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  font-size: var(--font-medium);
+}
+main .photo .photo_header_left,
+main .photo .photo_header_right {
+  margin: 0;
+}
+main .photo .photo_header_left {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+/* 포토헤더 이미지 크기 수정 */
+main .photo .photo_header img {
+  width: var(--imgicon-small-size);
+  height: var(--imgicon-samll-size);
+}
+/* 포토헤더 이름 위치 수정 */
+main .photo .photo_header .photo_header_left .name {
+  /* margin-top: -4px; */
+  margin-left: 15px;
+  letter-spacing: 2px;
+  font-size: var(--font-small);
+}
+main .photo .photo_header_right a .fa {
+  margin-right: 2px;
+}
+
+main .photo_main {
+  width: 100%;
+  height: 100%;
+  /* 최대 확장 크기 지정 */
+  max-width: 600px;
+  max-height: 600px;
 }

@@ -1,0 +1,96 @@
+
+/* 전역변수 설정 */
+:root {
+  
+  /* color */
+  --white-color: #fff;
+  --black-color: #000;
+  --red-color: #ec2020;
+  --blue-color: #09c;
+  --navy-color: #143b68;
+  --gray-light-color: #999;
+  --gray-dark-color: #666;
+
+  /* size */
+  --padding: 12px;
+  --imgicon-large-size: 50px;
+  --imgicon-medium-size: 32px;
+  --imgicon-small-size: 20px;
+
+  /* font-size */
+  --font-large: 22px;
+  --font-medium: 18px;
+  --font-small: 14px;
+  --font-micro: 10px;
+}
+
+  /* 기본 세팅 */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  /* text-decoration: none; */
+  /* all : 요소에 적용된 값들을 초기화 할 수 있게 만들어 줌 */
+  all: unset;
+  cursor: pointer;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--white-color);
+  border-bottom: 1px solid var(--gray-light-color);
+}
+header .logo {
+  display: flex;
+  margin: 1%;
+  margin-left: 4%;
+}
+header .search {
+  /* display: flex; */
+  margin: 0;
+  margin-top: 1%;
+  margin-left: 15%;
+  width: 30%;
+  height: var(--imgicon-large-size);
+}
+/* placeholder 중앙 배치 */
+input::placeholder {
+  text-align: center;
+}
+/* 검색창 조절 */
+header .search .search_input {
+  width: 70%;
+  height: 60%;
+  /* margin-top: 5%; */
+}
+/* 아이콘 조절 */
+header .icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
+  margin-right: 4%;
+  width: 20%;
+}
+header .icons li a img {
+  position: relative;
+  margin-top: 20%;
+  width: var(--imgicon-small-size);
+  height: var(--imgicon-samll-size);
+}
+
+/* main */
+main {
+  padding-top: calc(var(--padding) * 2);
+}

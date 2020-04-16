@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instagram</title>
+  
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
+  <link rel="stylesheet" href="style.css">
 
   <!-- <script src="https://use.fontawesome.com/b1c17a895b.js"></script> -->
 </head>
@@ -19,28 +21,24 @@
     </div>
     <!-- search -->
     <div class="search">
-      <input type="text" placeholder="검색" autocapitalize="none" value>
-      <div class="search_inside" role="button">
-        <span><i class="fa fa-search" aria-hidden="true"></i></span>
-        <span>검색</span>
-      </div>
+      <input class="search_input" type="text" placeholder="검색" autocapitalize="none">
+      <!-- <div class="search_inside" role="button">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </div> -->
     </div>
     <!-- icons -->
-    <div class="icons">
-      <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-compass" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-      <a href="#"><img src="images/instagram_icon.png" alt="" /></a>
-    </div>
+    <ul class="icons">
+      <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-compass" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+      <li><a href="#"><img src="images/instagram_icon.png" alt="" /></a></li>
+    </ul>
 
   </header>
 
   <!-- main -->
   <main>
-
-    <!-- section -->
-    <section>
 
       <!-- photo -->
       <div class="photo">
@@ -54,12 +52,10 @@
             <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
           </div>
         </div>
-        
         <!-- photo_main -->
         <div class="photo_main">
           <img src="images/umf.jpg" alt="" />
         </div>
-
         <!-- photo_info -->
         <div class="photo_info">
           <div class="photo_info_left">
@@ -75,17 +71,18 @@
         <!-- photo_conmment -->
         <div class="photo_conmment">
 
+          <!-- photo_comment_like -->
           <div class="photo_comment_like">
             <a href="#"><img src="images/instagram_icon.png" alt="" /></a>
-            <span>macaron_jung님 외 29명이 좋아합니다</span>
+            <span><a href="#"> macaron_jung</a>님 <a href="#">외 29명</a>이 좋아합니다</span>
           </div>
-
+          <!-- photo_comment_reply -->
           <div class="photo_comment_reply">
             <div class="photo_comment_reply_1">
-              <a href="#">macaron_jung</a><span>#EDM #UMF #Martin Garrix</span>
+              <a href="#">macaron_jung</a><span> #EDM #UMF #Martin Garrix</span>
             </div>
             <div class="photo_comment_reply_view">
-              <span>댓글 14개 모두 보기</span>
+              <a href="#"><span>댓글 14개 모두 보기</span></a>
             </div>
             <div class="photo_comment_reply_2">
               <a href="#">martin_garrix</a><span> @macaron_jung Party Together!!!</span>
@@ -96,7 +93,7 @@
             <div class="photo_comment_reply_time">
               <span>7시간 전</span>
             </div>
-
+            <!-- photo_comment_reply_new -->
             <div class="photo_comment_reply_new">
               <div class="photo_comment_reply_new_left">
                 <span>댓글 달기...</span>
@@ -121,7 +118,6 @@
           <span>macaron_jung</span>
           <span>macaronjung</span>
         </div>
-
         <!-- info_story -->
         <div class="info_story">
           <div class="info_story_top">
@@ -208,8 +204,6 @@
         </div> <!-- info_copyright -->
 
       </div> <!-- info -->
-
-    </section>
 
   </main>
 </body>

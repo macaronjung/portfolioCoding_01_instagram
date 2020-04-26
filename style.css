@@ -100,6 +100,7 @@ main .photo {
   display: flex;
   flex-direction: column;
   border: 1px solid var(--gray-light-color);
+  margin-left: 4%;
 }
 main .photo .photo_header {
   width: 100%;
@@ -139,4 +140,42 @@ main .photo_main {
   /* 최대 확장 크기 지정 */
   max-width: 600px;
   max-height: 600px;
+}
+
+/* 사진 하단 아이콘 배치 */
+main .photo_info {
+  width: 100%;
+  display: flex;
+  padding: 1%;
+}
+/* 사진 하단 좌측 아이콘 배치 */
+main .photo_info .photo_info_left {
+    width: 30%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+}
+/* 사진 하단 우측 아이콘 배치 */
+main .photo_info .photo_info_right {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2%;
+}
+
+/* 사진 하단 글 배치 */
+main .photo_conmment {
+  margin: 0;
+  padding: 0% 2%;
+  font-size: var(--font-small);
+}
+/* 사진 하단 좋아요 글 조정 */
+main .photo_conmment .photo_comment_like {
+  display: inline-flex;
+}
+/* 사진 하단 좋아요 내부 사진 크기 조정 */
+main .photo_conmment .photo_comment_like .photo_comment_like_img {
+  inline-size: 80%;
 }

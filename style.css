@@ -92,7 +92,7 @@ header .icons li a img {
 
 /* main */
 main {
-  padding-top: calc(var(--padding) * 2);
+  padding: calc(var(--padding) * 2) 0;
   display: flex;
   flex-direction: row;
 }
@@ -175,7 +175,42 @@ main .photo_conmment {
 main .photo_conmment .photo_comment_like {
   display: inline-flex;
 }
+/* 사진 하단 좋아요 글 위치 상세 조정 */
+main .photo_conmment .photo_comment_like span {
+  /* margin-top: 1px; */
+}
 /* 사진 하단 좋아요 내부 사진 크기 조정 */
 main .photo_conmment .photo_comment_like .photo_comment_like_img {
   inline-size: 80%;
 }
+
+/* 사진 하단 댓글 부분 글자 수정 */
+.photo_comment_reply_view {
+  font-size: 12px;
+  color: var(--gray-light-color);
+  padding-top: 2px;
+}
+/* 사진 하단 댓글 시간 부분 조정 */
+.photo_comment_reply_time {
+  padding: 2% 0;
+  font-size: var(--font-micro);
+  color: var(--gray-light-color);
+}
+
+/* 사진 하단 댓글 새로달기 부분 조정 */
+.photo_comment_reply_new {
+  border-top: 1px solid;
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-between;
+}
+/* 사진 하단 댓글 글자 위치 및 배치 상세 조정 */
+.photo_comment_reply_new .photo_comment_reply_new_left {
+  margin: 0;
+  color: var(--gray-light-color);
+}
+.photo_comment_reply_new .photo_comment_reply_new_right {
+  margin: 0;
+  color: var(--blue-color);
+}
+

@@ -181,9 +181,9 @@ main .photo_conmment .photo_comment_like {
   display: inline-flex;
 }
 /* 사진 하단 좋아요 글 위치 상세 조정 */
-main .photo_conmment .photo_comment_like span {
-  /* margin-top: 1px; */
-}
+/* main .photo_conmment .photo_comment_like span {
+
+} */
 /* 사진 하단 좋아요 내부 사진 크기 조정 */
 main .photo_conmment .photo_comment_like .photo_comment_like_img {
   inline-size: 80%;
@@ -217,6 +217,7 @@ main .photo_conmment .photo_comment_like .photo_comment_like_img {
 .photo_comment_reply_new .photo_comment_reply_new_right {
   margin: 0;
   color: var(--blue-color);
+  font-weight: 900;
 }
 
 /* -------------------------------------- */
@@ -320,3 +321,57 @@ main .info .info_member .info_name_bottom {
   width: var(--imgicon-medium-size);
   height: var(--imgicon-medium-size);
 }
+/* 우측 정보 추천 하단 사진 및 글자 전체박스 조정 */
+.info .info_recommend .info_recommend_main .info_recommend_main_left {
+  display: flex;
+}
+/* 우측 정보 추천 하단 사진 위치 관련 a 상세 조정 */
+.info .info_recommend .info_recommend_main .info_recommend_main_left a {
+  margin-top: 4px;
+}
+/* 우측 정보 추천 하단 글자 전체 위치 및 크기 조정 */
+.info .info_recommend .info_recommend_main .info_recommend_main_left .info_recommend_main_left_text {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+  padding-left: 4%;
+  width: 70%;
+}
+/* 우측 정보 추천 하단 글자 아이디(상단) 부분 조정 */
+.info .info_recommend .info_recommend_main .info_recommend_main_left .info_recommend_main_left_text .info_recommend_main_left_text_top {
+  margin: 0;
+}
+/* 우측 정보 추천 하단 글자 아이디(하단) 부분 조정 */
+.info .info_recommend .info_recommend_main .info_recommend_main_left .info_recommend_main_left_text .info_recommend_main_left_text_bottom {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--gray-light-color);
+}
+/* 우측 정보 추천 하단 팔로우 버튼 전체 박스 크기 조정 */
+.info .info_recommend .info_recommend_main .info_recommend_main_left .info_recommend_main_right {
+  padding: 1% 0 0 6%;
+  width: 18%;
+}
+/* 우측 정보 추천 하단 팔로우 버튼 색상 조정(커스터마이즈) */
+/* .info .info_recommend .info_recommend_main .info_recommend_main_left .info_recommend_main_right button {
+  font-size: var(--font-micro);
+  border: 1px solid var(--gray-dark-color);
+  background-color: rgba(0,0,0,0);
+  padding: 1px;
+  border-radius: 4px;
+} */
+/* 우측 정보 추천 하단 팔로우 버튼 색상 조정(오리지널) */
+.info .info_recommend .info_recommend_main .info_recommend_main_left .info_recommend_main_right button {
+  font-size: var(--font-micro);
+  padding: 1px;
+  border: none;
+  color: var(--blue-color);
+  background-color: var(--white-color);
+  font-weight: 900;
+}
+/* 우측 정보 추천 하단 팔로우 버튼 호버 기능 */
+/* .info .info_recommend .info_recommend_main .info_recommend_main_left .info_recommend_main_right button:hover {
+
+} */

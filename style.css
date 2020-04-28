@@ -35,6 +35,10 @@ ul {
   list-style: none;
 }
 
+div {
+  margin: 0;
+}
+
 a {
   /* text-decoration: none; */
   /* all : 요소에 적용된 값들을 초기화 할 수 있게 만들어 줌 */
@@ -100,6 +104,7 @@ main .photo {
   display: flex;
   flex-direction: column;
   border: 1px solid var(--gray-light-color);
+  border-radius: 4px;
   margin-left: 4%;
 }
 main .photo .photo_header {
@@ -219,7 +224,7 @@ main .photo_conmment .photo_comment_like .photo_comment_like_img {
 
 /* 우측 정보 전체 박스 위치 조정 */
 main .info {
-  margin-left: 2%;
+  margin: 0 4% 0 2%;
 }
 /* 우측 본인 정보 사진 크기 조정 */
 main .info a img {
@@ -247,4 +252,71 @@ main .info .info_member .info_name_bottom {
   margin: 0;
   font-size: var(--font-micro);
   color: var(--gray-light-color);
+}
+
+/* 우측 정보 스토리 부분 경계선 및 내부 여백 부여 */
+.info .info_story {
+  border: 1px solid var(--gray-light-color);
+  border-radius: 4px;
+  padding: 4%;
+  margin: 4% 0;
+}
+/* 우측 정보 스토리 상단 글자 박스 수정 */
+.info .info_story .info_story_top {
+  display: flex;
+  justify-content: space-between;
+}
+/* 우측 정보 스토리 상단 좌측 글자 수정 */
+.info .info_story .info_story_top .info_story_top_left {
+  margin: 0;
+  font-size: var(--font-medium);
+  color: var(--gray-dark-color);
+}
+/* 우측 정보 스토리 상단 우측 글자 수정 */
+.info .info_story .info_story_top .info_story_top_right {
+  margin: 0;
+  font-size: var(--font-small);
+  color: var(--black-color);
+  padding-top: 2px;
+}
+/* 우측 정보 스토리 하단 글자 수정 */
+.info .info_story .info_story_bottom span {
+  font-size: var(--font-micro);
+}
+
+/* 우측 정보 추천 박스 위치 수정 및 외곽선 부여 */
+.info .info_recommend {
+  border: 1px solid var(--gray-light-color);
+  border-radius: 4px;
+  padding: 4%;
+  margin: 4% 0;
+}
+/* 우측 정보 추천 글자 상단 박스 수정 */
+.info .info_recommend .info_recommend_top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4%;
+}
+/* 우측 정보 추천 상단 좌측 글자 수정 */
+.info .info_recommend .info_recommend_top .info_recommend_top_left {
+  margin: 0;
+  font-size: var(--font-medium);
+  color: var(--gray-dark-color);
+}
+/* 우측 정보 추천 상단 우측 글자 수정 */
+.info .info_recommend .info_recommend_top .info_recommend_top_right {
+  margin: 0;
+  font-size: var(--font-small);
+  color: var(--black-color);
+  padding-top: 2px;
+}
+/* 우측 정보 추천 하단 팔로우 전체 박스 조정 */
+.info .info_recommend .info_recommend_main {
+  display: flex;
+  flex-direction: column;
+}
+/* 우측 정보 추천 하단 사진 크기 조정 */
+.info .info_recommend .info_recommend_main .info_recommend_main_left a img {
+  width: var(--imgicon-medium-size);
+  height: var(--imgicon-medium-size);
 }

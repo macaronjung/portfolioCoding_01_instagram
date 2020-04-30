@@ -99,6 +99,7 @@ main {
   padding: calc(var(--padding) * 2) 0;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 main .photo {
   display: flex;
@@ -225,7 +226,7 @@ main .photo_conmment .photo_comment_like .photo_comment_like_img {
 
 /* 우측 정보 전체 박스 위치 조정 */
 main .info {
-  margin: 0 4% 0 2%;
+  margin: 0;
 }
 /* 우측 본인 정보 사진 크기 조정 */
 main .info a img {
@@ -375,3 +376,44 @@ main .info .info_member .info_name_bottom {
 /* .info .info_recommend .info_recommend_main .info_recommend_main_left .info_recommend_main_right button:hover {
 
 } */
+
+/* 우측 하단 인스타그램 회사 소개란 전체 박스 조정 */
+.info .info_instagram {
+  font-size: var(--font-micro);
+  color: var(--gray-light-color);
+  display: flex;
+}
+/* 우측 하단 회사 소개란 전체 박스 조정 */
+.info .info_instagram .info_instagram {
+  margin: 0;
+  display: flex;
+  width: 50%;
+}
+/* 우측 하단 회사 소개란 위치 조정 */
+.info .info_instagram .info_instagram_company {
+  /* display: flex; */
+  margin: 0;
+  /* flex-wrap: nowrap; */
+  /* width: 100%; */
+  float: left;
+  width: 100%;
+  letter-spacing: -1px;
+}
+/* 우측 하단 회사 소개란 li 수정 */
+.info .info_instagram .info_instagram_company li {
+/* max-width: 100%; */
+/* margin-right: 5%; */
+/* column-count: 1; */
+/* column-width: 11px; */
+/* float: left; */
+/* width: max-content; */
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+/* 우측 하단 회사 카피라이트 부분 조정 */
+.info .info_instagram .info_copyright {
+  font-size: var(--font-micro);
+  color: var(--gray-dark-color);
+  padding-top: 2%;
+}

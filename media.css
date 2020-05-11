@@ -68,3 +68,70 @@
   }
 }
 
+/* ------------------------------ */
+/* -----태블릿 모바일(768px)----- */
+
+@media only screen and (max-width: 768px) {
+
+  /* 메인 부분 상단 패딩값 조정 */
+  main {
+    padding-top: 2%;
+  }
+  /* 헤더 검색창 전체 위치 수정 */
+  header .search {
+    margin-top: 2%;
+  }
+  /* 메인 사진 전체 박스 수정 */
+  main .photo {
+    margin-left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  /* 메인 박스 내부 전체 크기 조정 */
+  main .photo_main {
+    height: 40%;
+  }
+  /* 메인 박스 내부 사진 크기 조정 */
+  main .photo_main > img{
+    width: 100%;
+    height: 400px;
+  }
+
+  /* 메인 박스 사진 정보 전체 박스 조정 */
+  main .photo_info {
+    margin-top: -1%;
+  }
+  /* 메인 박스 댓글 전체 박스 조정 */
+  main .photo_conmment {
+    padding-top: 2%;
+  }
+  /* 메인 박스 댓글 좋아부 전체 박스 조정 */
+  main .photo_conmment .photo_comment_like {
+    /* padding-bottom: 2%; */
+  }
+
+  /* 우측 정보 전체 박스 조정 */
+  main .info {
+    padding-left: 1%;
+  }
+
+  /* 우측 정보 스토리 내부 팔로우 글자 크기 수정 */
+  .info .info_story .info_story_bottom span {
+    font-size: 11px;
+  }
+
+  /* 우측 정보 추천 내부 상단 글자 크기 조정 */
+  .info .info_recommend .info_recommend_top .info_recommend_top_left {
+    font-size: 15px;
+  }
+  /* 우측 정보 추천 내부 팔로우 글자 크기 조정 */
+  .info .info_recommend .info_recommend_main .info_recommend_main_left .info_recommend_main_right {
+    width: 23%;
+  }
+
+  /* 우측 하단 카피라이트 글자 크기 조정 */
+  main .info .info_copyright {
+    font-size: var(--font-small);
+    text-align: center;
+  }
+}

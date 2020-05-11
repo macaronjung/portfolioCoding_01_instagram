@@ -40,11 +40,26 @@
   main {
     padding: 0;
   }
-  /* 메인 헤더 사진 전체 박스 수정 */
+
+  /* 메인 사진 전체 박스 수정(border 삭제) */
   main .photo {
     width: 100%;
     margin: 0;
     border: none;
+  }
+  /* 메인 사진 헤더 우측 아이콘 수정(90도 회전) */
+  main .photo .photo_header_right a .fa {
+    margin-right: 2px;
+    transform: rotate(90deg);
+  }
+  /* 메인 사진 내부 이미지 크기 조절 */
+  main .photo_main > img {
+    width: 100vw;
+    height: 80vh;
+  }
+  /* 메인 사진 정보 전체 박스 수정 */
+  main .photo_info {
+    padding-bottom: 3%;
   }
 
   /* 우측 정보란 삭제 */

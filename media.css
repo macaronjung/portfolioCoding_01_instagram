@@ -1,0 +1,55 @@
+
+/* 반응형 모바일(375) */
+
+@media only screen and (max-width: 375px) {
+
+  /* 바디 전제 박스 수정 */
+  body {
+    width: 100%;
+  }
+
+  /* 헤더 전체 박스 수정 */
+  header {
+    width: 100%;
+    border-bottom: 1px solid var(--black-color);
+  }
+  /* 헤더 인스타그램 이미지 크기 수정 */
+  header .logo > img {
+    width: 80%;
+    margin-left: 0;
+  }
+  /* 헤더 검색창 삭제 */
+  header .search {
+    display: none;
+  }
+
+  /* 헤더 아이콘 전체 박스 수정 */
+  header .icons {
+    margin: 0;
+    width: 11%;
+  }
+  /* 헤더 아이콘 일부 삭제 */
+  header .icons .fa-home,
+  header .icons .fa-compass,
+  header .icons .fa-heart-o,
+  header .icons img {
+    display: none;
+  }
+
+  /* 메인 전체 박스 수정 */
+  main {
+    padding: 0;
+  }
+  /* 메인 헤더 사진 전체 박스 수정 */
+  main .photo {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+
+  /* 우측 정보란 삭제 */
+  main .info {
+    display: none;
+  }
+}
+

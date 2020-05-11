@@ -382,6 +382,7 @@ main .info .info_member .info_name_bottom {
   font-size: var(--font-micro);
   color: var(--gray-light-color);
   display: flex;
+  padding-bottom: 2%;
 }
 /* 우측 하단 회사 소개란 전체 박스 조정 */
 .info .info_instagram .info_instagram {

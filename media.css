@@ -58,8 +58,9 @@
     height: 80vh;
   }
   /* 메인 사진 정보 전체 박스 수정 */
-  main .photo_info {
-    padding-bottom: 3%;
+  main .photo .photo_info {
+    margin-top: 36%;
+    /* padding-bottom: 3%; */
   }
 
   /* 우측 정보란 삭제 */
@@ -99,7 +100,8 @@
 
   /* 메인 박스 사진 정보 전체 박스 조정 */
   main .photo_info {
-    margin-top: -1%;
+    margin-top: 25%;
+    padding-bottom: 0;
   }
   /* 메인 박스 댓글 전체 박스 조정 */
   main .photo_conmment {
